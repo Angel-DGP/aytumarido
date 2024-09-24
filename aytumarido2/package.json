@@ -10,9 +10,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
+<<<<<<< HEAD
     "formik": "^2.4.6",
+=======
+    "@coreui/coreui": "^5.1.2",
+    "@coreui/react": "^5.3.0",
+>>>>>>> b212896a92a7899431c9ff9abb76bfdf7be536ea
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "styled-components": "^6.1.13"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",

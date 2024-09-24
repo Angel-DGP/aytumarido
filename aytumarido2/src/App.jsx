@@ -1,4 +1,5 @@
 import React from "react";
+import FormLogins from "./components/FormLogins";
 import { useState } from "react";
 import styled, { css } from "styled-components";
 import Modal from "./components/modal";
@@ -23,6 +24,8 @@ function App() {
             <br />
             Aqui va el formulario
           </p>
+        <FormLogins></FormLogins>
+          
         </Contenido>
       </Modal>
     </div>
@@ -104,4 +107,5 @@ const DivHeader = styled.div`
 const DivBody = styled.div`
   border: solid 4px #000000;
 `;
+
 export default App;

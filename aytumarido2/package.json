@@ -10,10 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@coreui/coreui": "^5.1.2",
-    "@coreui/react": "^5.3.0",
+    "formik": "^2.4.6",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "styled": "^1.0.0",
     "styled-components": "^6.1.13"
   },
   "devDependencies": {

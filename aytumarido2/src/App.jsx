@@ -1,13 +1,5 @@
 import React from "react";
-<<<<<<< HEAD
 import FormLogins from "./components/FormLogins";
-const App = () => {
-  return (  
-    <FormLogins></FormLogins>
-  );
-}
-
-=======
 import { useState } from "react";
 import styled, { css } from "styled-components";
 import Modal from "./components/modal";
@@ -21,86 +13,8 @@ function App() {
 
       <Modal estado={estadoModal1} cambiarEstado={cambiarEstadoModal1}>
         <Contenido>
-          <h2>Quien lea esto es meco</h2>
-          <p>Ay tu marido leandro brazo de linux</p>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
-            aliquid in vero ex quasi sed maiores repudiandae. Impedit magni
-            repellat ducimus obcaecati deleniti quam repudiandae nam omnis esse,
-            temporibus distinctio.
-          </p>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
-            aliquid in vero ex quasi sed maiores repudiandae. Impedit magni
-            repellat ducimus obcaecati deleniti quam repudiandae nam omnis esse,
-            temporibus distinctio.
-          </p>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
-            aliquid in vero ex quasi sed maiores repudiandae. Impedit magni
-            repellat ducimus obcaecati deleniti quam repudiandae nam omnis esse,
-            temporibus distinctio.
-          </p>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
-            aliquid in vero ex quasi sed maiores repudiandae. Impedit magni
-            repellat ducimus obcaecati deleniti quam repudiandae nam omnis esse,
-            temporibus distinctio.
-          </p>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
-            aliquid in vero ex quasi sed maiores repudiandae. Impedit magni
-            repellat ducimus obcaecati deleniti quam repudiandae nam omnis esse,
-            temporibus distinctio.
-          </p>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
-            aliquid in vero ex quasi sed maiores repudiandae. Impedit magni
-            repellat ducimus obcaecati deleniti quam repudiandae nam omnis esse,
-            temporibus distinctio.
-          </p>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
-            aliquid in vero ex quasi sed maiores repudiandae. Impedit magni
-            repellat ducimus obcaecati deleniti quam repudiandae nam omnis esse,
-            temporibus distinctio.
-          </p>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
-            aliquid in vero ex quasi sed maiores repudiandae. Impedit magni
-            repellat ducimus obcaecati deleniti quam repudiandae nam omnis esse,
-            temporibus distinctio.
-          </p>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
-            aliquid in vero ex quasi sed maiores repudiandae. Impedit magni
-            repellat ducimus obcaecati deleniti quam repudiandae nam omnis esse,
-            temporibus distinctio.
-          </p>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
-            aliquid in vero ex quasi sed maiores repudiandae. Impedit magni
-            repellat ducimus obcaecati deleniti quam repudiandae nam omnis esse,
-            temporibus distinctio.
-          </p>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
-            aliquid in vero ex quasi sed maiores repudiandae. Impedit magni
-            repellat ducimus obcaecati deleniti quam repudiandae nam omnis esse,
-            temporibus distinctio.
-          </p>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
-            aliquid in vero ex quasi sed maiores repudiandae. Impedit magni
-            repellat ducimus obcaecati deleniti quam repudiandae nam omnis esse,
-            temporibus distinctio.
-          </p>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
-            aliquid in vero ex quasi sed maiores repudiandae. Impedit magni
-            repellat ducimus obcaecati deleniti quam repudiandae nam omnis esse,
-            temporibus distinctio.
-          </p>
+        <FormLogins></FormLogins>
+          
         </Contenido>
       </Modal>
     </div>
@@ -160,5 +74,5 @@ const Contenido = styled.div`
     border-radius: 3px;
   }
 `;
->>>>>>> b212896a92a7899431c9ff9abb76bfdf7be536ea
+
 export default App;

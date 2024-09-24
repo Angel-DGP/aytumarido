@@ -6,91 +6,22 @@ function App() {
   const [estadoModal1, cambiarEstadoModal1] = useState(false);
   return (
     <div>
-      <ContenedorBotones>
+      <DivUsuario>
+        <DivHeader>
+          <h1>INTERNACIONALIZACIÓN</h1>
+        </DivHeader>
+        <h3>Usuario Actual</h3>
+        <input disabled value={"Formativa.ti@pucese.edu.ec"}></input>
         <Boton onClick={() => cambiarEstadoModal1(!estadoModal1)}>+</Boton>
-      </ContenedorBotones>
-
+        <DivBody></DivBody>
+      </DivUsuario>
       <Modal estado={estadoModal1} cambiarEstado={cambiarEstadoModal1}>
         <Contenido>
-          <h2>Quien lea esto es meco</h2>
-          <p>Ay tu marido leandro brazo de linux</p>
+          <h2></h2>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
-            aliquid in vero ex quasi sed maiores repudiandae. Impedit magni
-            repellat ducimus obcaecati deleniti quam repudiandae nam omnis esse,
-            temporibus distinctio.
-          </p>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
-            aliquid in vero ex quasi sed maiores repudiandae. Impedit magni
-            repellat ducimus obcaecati deleniti quam repudiandae nam omnis esse,
-            temporibus distinctio.
-          </p>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
-            aliquid in vero ex quasi sed maiores repudiandae. Impedit magni
-            repellat ducimus obcaecati deleniti quam repudiandae nam omnis esse,
-            temporibus distinctio.
-          </p>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
-            aliquid in vero ex quasi sed maiores repudiandae. Impedit magni
-            repellat ducimus obcaecati deleniti quam repudiandae nam omnis esse,
-            temporibus distinctio.
-          </p>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
-            aliquid in vero ex quasi sed maiores repudiandae. Impedit magni
-            repellat ducimus obcaecati deleniti quam repudiandae nam omnis esse,
-            temporibus distinctio.
-          </p>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
-            aliquid in vero ex quasi sed maiores repudiandae. Impedit magni
-            repellat ducimus obcaecati deleniti quam repudiandae nam omnis esse,
-            temporibus distinctio.
-          </p>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
-            aliquid in vero ex quasi sed maiores repudiandae. Impedit magni
-            repellat ducimus obcaecati deleniti quam repudiandae nam omnis esse,
-            temporibus distinctio.
-          </p>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
-            aliquid in vero ex quasi sed maiores repudiandae. Impedit magni
-            repellat ducimus obcaecati deleniti quam repudiandae nam omnis esse,
-            temporibus distinctio.
-          </p>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
-            aliquid in vero ex quasi sed maiores repudiandae. Impedit magni
-            repellat ducimus obcaecati deleniti quam repudiandae nam omnis esse,
-            temporibus distinctio.
-          </p>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
-            aliquid in vero ex quasi sed maiores repudiandae. Impedit magni
-            repellat ducimus obcaecati deleniti quam repudiandae nam omnis esse,
-            temporibus distinctio.
-          </p>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
-            aliquid in vero ex quasi sed maiores repudiandae. Impedit magni
-            repellat ducimus obcaecati deleniti quam repudiandae nam omnis esse,
-            temporibus distinctio.
-          </p>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
-            aliquid in vero ex quasi sed maiores repudiandae. Impedit magni
-            repellat ducimus obcaecati deleniti quam repudiandae nam omnis esse,
-            temporibus distinctio.
-          </p>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
-            aliquid in vero ex quasi sed maiores repudiandae. Impedit magni
-            repellat ducimus obcaecati deleniti quam repudiandae nam omnis esse,
-            temporibus distinctio.
+            Ay tu marido leandro brazo de linux
+            <br />
+            Aqui va el formulario
           </p>
         </Contenido>
       </Modal>
@@ -118,6 +49,7 @@ const Boton = styled.button`
   font-weight: 500;
   transition: 0.3s ease all;
   font-size: 20px;
+  margin-top: 15px;
 
   &:hover {
     background: #0fb42581;
@@ -150,5 +82,26 @@ const Contenido = styled.div`
     vertical-align: top;
     border-radius: 3px;
   }
+`;
+const DivUsuario = styled.div`
+  margin: 30px;
+  padding: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  input {
+    border: solid 1px #00000036;
+    border-radius: 3px;
+    background-color: #00000029;
+    padding: 10px 5px 10px 5px;
+    font-size: 15px;
+    width: 230px;
+  }
+`;
+const DivHeader = styled.div`
+  text-align: center;
+  color: #009ece;
+`;
+const DivBody = styled.div`
+  border: solid 4px #000000;
 `;
 export default App;

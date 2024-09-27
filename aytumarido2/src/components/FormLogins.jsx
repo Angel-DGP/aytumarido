@@ -177,7 +177,7 @@ const FormLogins = () => {
               <div>
                 <label htmlFor="f_inicio">Fecha de Inicio</label>
                 <input
-                  type="text"
+                  type="date"
                   id="f_inicio"
                   name="f_inicio"
                   placeholder="dd/mm/aaaa"
@@ -190,7 +190,7 @@ const FormLogins = () => {
               <div>
                 <label htmlFor="f_fin">Fecha Fin</label>
                 <input
-                  type="text"
+                  type="date"
                   id="f_fin"
                   name="f_fin"
                   placeholder="dd/mm/aaaa"

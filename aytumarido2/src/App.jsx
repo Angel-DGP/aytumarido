@@ -3,32 +3,62 @@ import FormLogins from "./components/FormLogins";
 import { useState } from "react";
 import styled, { css } from "styled-components";
 import Modal from "./components/modal";
+import { CModalBody } from "@coreui/react";
+import { CModalFooter } from "@coreui/react";
+import { CModalHeader } from "@coreui/react";
+import { CModalTitle } from "@coreui/react";
+import { CButton } from "@coreui/react";
+import { CModal } from "@coreui/react";
+import "@coreui/coreui/dist/css/coreui.min.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
-  const [estadoModal1, cambiarEstadoModal1] = useState(false);
+  /*const [estadoModal1, cambiarEstadoModal1] = useState(false);
   return (
-    <div>
-      <DivUsuario>
-        <DivHeader>
-          <h1>INTERNACIONALIZACIÓN</h1>
-        </DivHeader>
-        <h3>Usuario Actual</h3>
-        <input disabled value={"Formativa.ti@pucese.edu.ec"}></input>
-        <Boton onClick={() => cambiarEstadoModal1(!estadoModal1)}>+</Boton>
-        <DivBody></DivBody>
-      </DivUsuario>
+    
+
       <Modal estado={estadoModal1} cambiarEstado={cambiarEstadoModal1}>
         <Contenido>
-          <h2></h2>
-          <p>
-            Ay tu marido leandro brazo de linux
-            <br />
-            Aqui va el formulario
-          </p>
-        <FormLogins></FormLogins>
-          
+          <FormLogins></FormLogins>
         </Contenido>
       </Modal>
     </div>
+  );*/
+  const [visible, setVisible] = useState(false);
+  return (
+    <>
+      <div>
+        <DivUsuario>
+          <DivHeader>
+            <h1>INTERNACIONALIZACIÓN</h1>
+          </DivHeader>
+          <h3>Usuario Actual</h3>
+          <input disabled value={"Formativa.ti@pucese.edu.ec"}></input>
+          <br></br>
+          <CButton color="primary" onClick={() => setVisible(!visible)}>
+            +
+          </CButton>
+          <DivBody></DivBody>
+        </DivUsuario>
+      </div>
+
+      <CModal
+        scrollable
+        size="xl"
+        visible={visible}
+        onClose={() => setVisible(false)}
+        aria-labelledby="ScrollingLongContentExampleLabel2"
+      >
+        <CModalHeader>
+          <CModalTitle id="ScrollingLongContentExampleLabel2">
+            Documento
+          </CModalTitle>
+        </CModalHeader>
+        <CModalBody>
+          <FormLogins></FormLogins>
+        </CModalBody>
+        <CModalFooter></CModalFooter>
+      </CModal>
+    </>
   );
 }
 

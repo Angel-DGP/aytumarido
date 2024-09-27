@@ -2,7 +2,7 @@ import React from "react";
 import "./index.css";
 import { Formik } from "formik";
 
-const FormLogins = () => {
+export default function FormLogins() {
   return (
     <>
       <Formik
@@ -241,6 +241,4 @@ const FormLogins = () => {
       </Formik>
     </>
   );
-};
-
-export default FormLogins;
+}
